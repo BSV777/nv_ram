@@ -1,0 +1,868 @@
+(PCB NV_RAM.PCA
+  (resolution inch 1000000)
+  (structure
+    (boundary
+      (rect pcb -2.000000 -0.600000 4.150000 2.650000)
+    )
+    (boundary
+      (path signal 0.0
+        -1.950000 2.600000
+        4.050000 2.550000
+        4.100000 -0.550000
+        -1.900000 -0.450000
+        -1.950000 2.600000
+      )
+    )
+    (via
+      rnd-040-020
+    )
+    (rule
+      (width 0.008000)
+      (clearance 0.008000)
+      (clearance 0.006000 (type pin_pin))
+      (clearance 0.006000 (type pin_smd))
+      (clearance 0.006000 (type pin_via))
+      (clearance 0.008000 (type pin_wire))
+      (clearance 0.006000 (type pin_area))
+      (clearance 0.006000 (type smd_pin))
+      (clearance 0.006000 (type smd_smd))
+      (clearance 0.006000 (type smd_via))
+      (clearance 0.008000 (type smd_wire))
+      (clearance 0.006000 (type smd_area))
+      (clearance 0.006000 (type via_pin))
+      (clearance 0.006000 (type via_smd))
+      (clearance 0.006000 (type via_via))
+      (clearance 0.008000 (type via_wire))
+      (clearance 0.006000 (type via_area))
+    )
+    (control
+      (force_to_terminal_point on)
+    )
+    (layer Component (type signal) 
+      (direction orthogonal)
+    )
+    (layer Solder (type signal) 
+      (direction orthogonal)
+    )
+    (grid wire 0.001000)
+    (grid via 0.001000)
+  )
+  (placement
+    (component CK05
+      (place C1 0.000000 0.000000 front 0)
+    )
+    (component DO-35
+      (place D1 0.000000 0.100000 front 0)
+    )
+    (component DSHELL25-F
+      (place J1 0.000000 0.190000 front 0)
+    )
+    (component DSHELL25-M
+      (place P1 0.000000 0.606000 front 0)
+    )
+    (component TO-220AB
+      (place Q1 0.000000 1.022000 front 0)
+    )
+    (component TO-220AB
+      (place Q2 0.000000 1.222000 front 0)
+    )
+    (component TO-220AB
+      (place Q3 0.000000 1.422000 front 0)
+    )
+    (component RC05
+      (place R1 0.000000 1.622000 front 0)
+    )
+    (component RC05
+      (place R2 0.000000 1.722000 front 0)
+    )
+    (component RC05
+      (place R3 0.000000 1.822000 front 0)
+    )
+    (component RC05
+      (place R5 2.095000 0.000000 front 0)
+    )
+    (component RC05
+      (place R6 2.095000 0.100000 front 0)
+    )
+    (component RC05
+      (place R7 2.095000 0.200000 front 0)
+    )
+    (component RC05
+      (place R8 2.095000 0.300000 front 0)
+    )
+    (component RC05
+      (place R9 2.095000 0.400000 front 0)
+    )
+    (component DIP16
+      (place U1 2.095000 0.500000 front 0)
+    )
+    (component DIP20
+      (place U2 2.095000 0.890000 front 0)
+    )
+    (component DIP20
+      (place U3 2.095000 1.280000 front 0)
+    )
+    (component DIP20
+      (place U4 2.095000 1.670000 front 0)
+    )
+    (component DIP16
+      (place U5 3.125000 0.000000 front 0)
+    )
+    (component DIP14
+      (place U6 3.125000 0.390000 front 0)
+    )
+    (component RC05
+      (place R4 -0.900000 1.950000 front 0)
+    )
+  )
+  (library
+    (image CK05
+      (pin rnd-080-040 1 0.000000 0.000000)
+      (pin rnd-080-040 2 0.200000 0.000000)
+    )
+    (image DO-35
+      (pin rnd-050-030 2 -0.400000 0.000000)
+      (pin sq-050-030 1 0.000000 0.000000)
+    )
+    (image DSHELL25-F
+      (pin rnd-063-043 2 -0.109000 0.000000)
+      (pin rnd-063-043 3 -0.218000 0.000000)
+      (pin rnd-063-043 4 -0.327000 0.000000)
+      (pin rnd-063-043 5 -0.436000 0.000000)
+      (pin rnd-063-043 6 -0.545000 0.000000)
+      (pin rnd-063-043 7 -0.654000 0.000000)
+      (pin rnd-063-043 8 -0.763000 0.000000)
+      (pin rnd-063-043 9 -0.872000 0.000000)
+      (pin rnd-063-043 10 -0.981000 0.000000)
+      (pin rnd-063-043 11 -1.090000 0.000000)
+      (pin rnd-063-043 12 -1.199000 0.000000)
+      (pin rnd-063-043 13 -1.308000 0.000000)
+      (pin rnd-063-043 14 -0.054500 -0.112000)
+      (pin rnd-063-043 15 -0.163500 -0.112000)
+      (pin rnd-063-043 16 -0.272500 -0.112000)
+      (pin rnd-063-043 17 -0.381500 -0.112000)
+      (pin rnd-063-043 18 -0.490500 -0.112000)
+      (pin rnd-063-043 19 -0.599500 -0.112000)
+      (pin rnd-063-043 20 -0.708500 -0.112000)
+      (pin rnd-063-043 21 -0.817500 -0.112000)
+      (pin rnd-063-043 22 -0.926500 -0.112000)
+      (pin rnd-063-043 23 -1.035500 -0.112000)
+      (pin rnd-063-043 24 -1.144500 -0.112000)
+      (pin rnd-063-043 25 -1.253500 -0.112000)
+      (pin sq-063-043 1 0.000000 0.000000)
+    )
+    (image DSHELL25-M
+      (pin rnd-063-043 7 0.654000 0.000000)
+      (pin sq-063-043 1 0.000000 0.000000)
+      (pin rnd-063-043 2 0.109000 0.000000)
+      (pin rnd-063-043 3 0.218000 0.000000)
+      (pin rnd-063-043 4 0.327000 0.000000)
+      (pin rnd-063-043 6 0.545000 0.000000)
+      (pin rnd-063-043 8 0.763000 0.000000)
+      (pin rnd-063-043 9 0.872000 0.000000)
+      (pin rnd-063-043 10 0.981000 0.000000)
+      (pin rnd-063-043 11 1.090000 0.000000)
+      (pin rnd-063-043 12 1.199000 0.000000)
+      (pin rnd-063-043 13 1.308000 0.000000)
+      (pin rnd-063-043 14 0.054500 -0.112000)
+      (pin rnd-063-043 15 0.163500 -0.112000)
+      (pin rnd-063-043 16 0.272500 -0.112000)
+      (pin rnd-063-043 17 0.381500 -0.112000)
+      (pin rnd-063-043 18 0.490500 -0.112000)
+      (pin rnd-063-043 19 0.599500 -0.112000)
+      (pin rnd-063-043 20 0.708500 -0.112000)
+      (pin rnd-063-043 21 0.817500 -0.112000)
+      (pin rnd-063-043 22 0.926500 -0.112000)
+      (pin rnd-063-043 23 1.035500 -0.112000)
+      (pin rnd-063-043 24 1.144500 -0.112000)
+      (pin rnd-063-043 25 1.253500 -0.112000)
+      (pin rnd-063-043 5 0.436000 0.000000)
+    )
+    (image TO-220AB
+      (pin rnd-080-060 3 0.200000 0.000000)
+      (pin rnd-080-060 2 0.100000 0.000000)
+      (pin sq-080-060 1 0.000000 0.000000)
+    )
+    (image RC05
+      (pin rnd-080-040 1 0.000000 0.000000)
+      (pin rnd-080-040 2 0.400000 0.000000)
+    )
+    (image DIP16
+      (pin sq-065-035 1 0.000000 0.000000)
+      (pin rnd-065-035 2 0.100000 0.000000)
+      (pin rnd-065-035 3 0.200000 0.000000)
+      (pin rnd-065-035 4 0.300000 0.000000)
+      (pin rnd-065-035 5 0.400000 0.000000)
+      (pin rnd-065-035 6 0.500000 0.000000)
+      (pin rnd-065-035 7 0.600000 0.000000)
+      (pin rnd-065-035 8 0.700000 0.000000)
+      (pin rnd-065-035 9 0.700000 0.300000)
+      (pin rnd-065-035 10 0.600000 0.300000)
+      (pin rnd-065-035 11 0.500000 0.300000)
+      (pin rnd-065-035 12 0.400000 0.300000)
+      (pin rnd-065-035 13 0.300000 0.300000)
+      (pin rnd-065-035 14 0.200000 0.300000)
+      (pin rnd-065-035 15 0.100000 0.300000)
+      (pin rnd-065-035 16 0.000000 0.300000)
+    )
+    (image DIP20
+      (pin sq-065-035 1 0.000000 0.000000)
+      (pin rnd-065-035 2 0.100000 0.000000)
+      (pin rnd-065-035 3 0.200000 0.000000)
+      (pin rnd-065-035 4 0.300000 0.000000)
+      (pin rnd-065-035 5 0.400000 0.000000)
+      (pin rnd-065-035 6 0.500000 0.000000)
+      (pin rnd-065-035 7 0.600000 0.000000)
+      (pin rnd-065-035 8 0.700000 0.000000)
+      (pin rnd-065-035 9 0.800000 0.000000)
+      (pin rnd-065-035 10 0.900000 0.000000)
+      (pin rnd-065-035 11 0.900000 0.300000)
+      (pin rnd-065-035 12 0.800000 0.300000)
+      (pin rnd-065-035 13 0.700000 0.300000)
+      (pin rnd-065-035 14 0.600000 0.300000)
+      (pin rnd-065-035 15 0.500000 0.300000)
+      (pin rnd-065-035 16 0.400000 0.300000)
+      (pin rnd-065-035 17 0.300000 0.300000)
+      (pin rnd-065-035 18 0.200000 0.300000)
+      (pin rnd-065-035 19 0.100000 0.300000)
+      (pin rnd-065-035 20 0.000000 0.300000)
+    )
+    (image DIP14
+      (pin sq-065-035 1 0.000000 0.000000)
+      (pin rnd-065-035 2 0.100000 0.000000)
+      (pin rnd-065-035 3 0.200000 0.000000)
+      (pin rnd-065-035 4 0.300000 0.000000)
+      (pin rnd-065-035 5 0.400000 0.000000)
+      (pin rnd-065-035 6 0.500000 0.000000)
+      (pin rnd-065-035 8 0.600000 0.300000)
+      (pin rnd-065-035 9 0.500000 0.300000)
+      (pin rnd-065-035 10 0.400000 0.300000)
+      (pin rnd-065-035 11 0.300000 0.300000)
+      (pin rnd-065-035 12 0.200000 0.300000)
+      (pin rnd-065-035 13 0.100000 0.300000)
+      (pin rnd-065-035 7 0.600000 0.000000)
+      (pin rnd-065-035 14 0.000000 0.300000)
+    )
+    (padstack rnd-040-020
+      (shape
+        (circle Component 0.040000)
+      )
+      (shape
+        (circle Solder 0.040000)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack rnd-080-040
+      (shape
+        (circle Component 0.080000)
+      )
+      (shape
+        (circle Solder 0.080000)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack rnd-080-040-smttop
+      (shape
+        (circle Component 0.080000)
+      )
+      (attach off)
+    )
+    (padstack rnd-080-040-smtbot
+      (shape
+        (circle Solder 0.080000)
+      )
+      (attach off)
+    )
+    (padstack rnd-065-035
+      (shape
+        (circle Component 0.065000)
+      )
+      (shape
+        (circle Solder 0.065000)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack rnd-065-035-smttop
+      (shape
+        (circle Component 0.065000)
+      )
+      (attach off)
+    )
+    (padstack rnd-065-035-smtbot
+      (shape
+        (circle Solder 0.065000)
+      )
+      (attach off)
+    )
+    (padstack sq-065-035
+      (shape
+        (rect Component -0.032500 -0.032500 0.032500 0.032500)
+      )
+      (shape
+        (rect Solder -0.032500 -0.032500 0.032500 0.032500)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack sq-065-035-smttop
+      (shape
+        (rect Component -0.032500 -0.032500 0.032500 0.032500)
+      )
+      (attach off)
+    )
+    (padstack sq-065-035-smtbot
+      (shape
+        (rect Solder -0.032500 -0.032500 0.032500 0.032500)
+      )
+      (attach off)
+    )
+    (padstack sq-080-060
+      (shape
+        (rect Component -0.040000 -0.040000 0.040000 0.040000)
+      )
+      (shape
+        (rect Solder -0.040000 -0.040000 0.040000 0.040000)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack sq-080-060-smttop
+      (shape
+        (rect Component -0.040000 -0.040000 0.040000 0.040000)
+      )
+      (attach off)
+    )
+    (padstack sq-080-060-smtbot
+      (shape
+        (rect Solder -0.040000 -0.040000 0.040000 0.040000)
+      )
+      (attach off)
+    )
+    (padstack rnd-080-060
+      (shape
+        (circle Component 0.080000)
+      )
+      (shape
+        (circle Solder 0.080000)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack rnd-080-060-smttop
+      (shape
+        (circle Component 0.080000)
+      )
+      (attach off)
+    )
+    (padstack rnd-080-060-smtbot
+      (shape
+        (circle Solder 0.080000)
+      )
+      (attach off)
+    )
+    (padstack sq-063-043
+      (shape
+        (rect Component -0.031500 -0.031500 0.031500 0.031500)
+      )
+      (shape
+        (rect Solder -0.031500 -0.031500 0.031500 0.031500)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack sq-063-043-smttop
+      (shape
+        (rect Component -0.031500 -0.031500 0.031500 0.031500)
+      )
+      (attach off)
+    )
+    (padstack sq-063-043-smtbot
+      (shape
+        (rect Solder -0.031500 -0.031500 0.031500 0.031500)
+      )
+      (attach off)
+    )
+    (padstack rnd-063-043
+      (shape
+        (circle Component 0.063000)
+      )
+      (shape
+        (circle Solder 0.063000)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack rnd-063-043-smttop
+      (shape
+        (circle Component 0.063000)
+      )
+      (attach off)
+    )
+    (padstack rnd-063-043-smtbot
+      (shape
+        (circle Solder 0.063000)
+      )
+      (attach off)
+    )
+    (padstack sq-050-030
+      (shape
+        (rect Component -0.025000 -0.025000 0.025000 0.025000)
+      )
+      (shape
+        (rect Solder -0.025000 -0.025000 0.025000 0.025000)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack sq-050-030-smttop
+      (shape
+        (rect Component -0.025000 -0.025000 0.025000 0.025000)
+      )
+      (attach off)
+    )
+    (padstack sq-050-030-smtbot
+      (shape
+        (rect Solder -0.025000 -0.025000 0.025000 0.025000)
+      )
+      (attach off)
+    )
+    (padstack rnd-050-030
+      (shape
+        (circle Component 0.050000)
+      )
+      (shape
+        (circle Solder 0.050000)
+      )
+      (attach off)
+      (absolute on)
+    )
+    (padstack rnd-050-030-smttop
+      (shape
+        (circle Component 0.050000)
+      )
+      (attach off)
+    )
+    (padstack rnd-050-030-smtbot
+      (shape
+        (circle Solder 0.050000)
+      )
+      (attach off)
+    )
+  )
+  (network
+    (net 0
+      (pins
+        C1-1
+        P1-18
+        P1-19
+        P1-20
+        P1-21
+        P1-22
+        P1-23
+        P1-24
+        P1-25
+        Q1-2
+        Q2-2
+        Q3-3
+        U1-4
+        U1-5
+        U5-15
+      )
+    )
+    (net A0
+      (pins
+        J1-11
+        U3-19
+      )
+    )
+    (net A1
+      (pins
+        J1-13
+        U3-18
+      )
+    )
+    (net A2
+      (pins
+        J1-15
+        U3-17
+      )
+    )
+    (net A3
+      (pins
+        J1-17
+        U3-16
+      )
+    )
+    (net A4
+      (pins
+        J1-19
+        U3-15
+        U4-19
+      )
+    )
+    (net A5
+      (pins
+        J1-21
+        U2-19
+      )
+    )
+    (net A6
+      (pins
+        J1-23
+        U2-18
+      )
+    )
+    (net A7
+      (pins
+        J1-25
+        U2-17
+      )
+    )
+    (net A8
+      (pins
+        J1-24
+        U2-16
+      )
+    )
+    (net A9
+      (pins
+        J1-22
+        U2-15
+      )
+    )
+    (net A10
+      (pins
+        J1-16
+        U2-14
+      )
+    )
+    (net A11
+      (pins
+        J1-20
+        U2-13
+      )
+    )
+    (net A14
+      (pins
+        R5-2
+        R7-1
+        U3-14
+        U4-1
+      )
+    )
+    (net CTRL1
+      (pins
+        P1-15
+        U5-4
+      )
+    )
+    (net CTRL2
+      (pins
+        P1-13
+        U5-7
+      )
+    )
+    (net CTRL3
+      (pins
+        P1-12
+        U5-9
+      )
+    )
+    (net CTRL4
+      (pins
+        P1-10
+        U5-12
+      )
+    )
+    (net CTRL5
+      (pins
+        J1-2
+        P1-11
+      )
+    )
+    (net D0
+      (pins
+        P1-2
+        U2-2
+        U3-2
+        U4-2
+      )
+    )
+    (net D1
+      (pins
+        P1-3
+        U2-3
+        U3-3
+        U4-4
+      )
+    )
+    (net D2
+      (pins
+        P1-4
+        U2-4
+        U3-4
+        U4-6
+      )
+    )
+    (net D3
+      (pins
+        P1-5
+        U2-5
+        U3-5
+        U4-8
+      )
+    )
+    (net D4
+      (pins
+        P1-6
+        U2-6
+        U3-6
+        U4-11
+      )
+    )
+    (net D5
+      (pins
+        P1-7
+        U2-7
+        U3-7
+        U4-13
+      )
+    )
+    (net D6
+      (pins
+        P1-8
+        U2-8
+        U3-8
+        U4-15
+      )
+    )
+    (net D7
+      (pins
+        P1-9
+        U2-9
+        U3-9
+        U4-17
+      )
+    )
+    (net DIG_GND
+      (pins
+        U1-8
+        U2-10
+        U3-10
+        U4-10
+        U5-8
+        U6-7
+      )
+    )
+    (net DIG_PWR
+      (pins
+        U1-16
+        U2-20
+        U3-20
+        U4-20
+        U5-16
+        U6-14
+      )
+    )
+    (net NN_0001
+      (pins
+        U1-15
+        U6-1
+        U6-2
+      )
+    )
+    (net NN_0002
+      (pins
+        C1-2
+        U2-11
+        U6-3
+      )
+    )
+    (net NN_0003
+      (pins
+        U2-1
+        U3-1
+        U6-8
+      )
+    )
+    (net NN_0004
+      (pins
+        U3-11
+        U6-6
+      )
+    )
+    (net NN_0006
+      (pins
+        U1-14
+        U6-4
+        U6-5
+      )
+    )
+    (net NN_0007
+      (pins
+        U1-12
+        U6-9
+      )
+    )
+    (net NN_0008
+      (pins
+        R2-1
+        U6-10
+        U6-11
+      )
+    )
+    (net NN_0009
+      (pins
+        D1-1
+        Q3-2
+        R3-1
+      )
+    )
+    (net NN_0010
+      (pins
+        P1-1
+        U6-12
+        U6-13
+      )
+    )
+    (net NN_0011
+      (pins
+        Q1-1
+        R6-2
+      )
+    )
+    (net NN_0012
+      (pins
+        J1-14
+        Q1-3
+        R9-1
+      )
+    )
+    (net NN_0015
+      (pins
+        J1-18
+        Q2-3
+        R8-1
+      )
+    )
+    (net NN_0016
+      (pins
+        R6-1
+        U1-13
+      )
+    )
+    (net NN_0017
+      (pins
+        Q2-1
+        R7-2
+      )
+    )
+    (net NN_0018
+      (pins
+        Q3-1
+        R2-2
+      )
+    )
+    (net NN_0023
+      (pins
+        R1-2
+        U1-6
+      )
+    )
+    (net Q0
+      (pins
+        J1-9
+        U4-18
+        U5-2
+      )
+    )
+    (net Q1
+      (pins
+        J1-7
+        U4-16
+        U5-3
+      )
+    )
+    (net Q2
+      (pins
+        J1-5
+        U4-14
+        U5-5
+      )
+    )
+    (net Q3
+      (pins
+        J1-4
+        U4-12
+        U5-6
+      )
+    )
+    (net Q4
+      (pins
+        J1-6
+        U4-9
+        U5-11
+      )
+    )
+    (net Q5
+      (pins
+        J1-8
+        U4-7
+        U5-10
+      )
+    )
+    (net Q6
+      (pins
+        J1-10
+        U4-5
+        U5-14
+      )
+    )
+    (net Q7
+      (pins
+        J1-12
+        U4-3
+        U5-13
+      )
+    )
+    (net SEL1
+      (pins
+        P1-14
+        U1-1
+      )
+    )
+    (net SEL2
+      (pins
+        P1-16
+        U1-2
+      )
+    )
+    (net SEL3
+      (pins
+        P1-17
+        U1-3
+      )
+    )
+    (net +5v
+      (pins
+        D1-2
+        R1-1
+        R3-2
+        R5-1
+        R8-2
+        R9-2
+        R4-1
+      )
+    )
+    (net A15
+      (pins
+        U3-13
+        U5-1
+        R4-2
+      )
+    )
+  )
+)

@@ -1,0 +1,48 @@
+# Cooper & Chyan Technology, Inc.
+# SPECCTRA Automatic Router
+# SPECCTRA Version V7.0.2 made 97/03/11 09:38:52, built Mar 11 1997 09:59:52
+# Running on host 72602554
+# 
+#            Command Line Parameters
+#            -----------------------
+# Design File Name : C:\Work\Diplom.!!!\Cad\nv_ram.ses
+# No "-do" or "-docmd" switches specified on command line.
+# Password File Name : sp.pas
+# Status File Name : C:\Work\Diplom.!!!\Cad\monitor.sts
+# 
+# 
+# 
+# 
+vset Component off
+repaint
+measure -1670 2172.5 -1670 2172.5
+view object_colors (set_color background white)
+repaint
+vset Grid on
+repaint
+vset Via_Grid on
+repaint
+vset Component_Labels on
+repaint
+vset Place_grid on
+repaint
+vset Site on
+repaint
+vset Origin on
+repaint
+vset Power_pin on
+repaint
+vset Component on
+repaint
+vset Component off
+repaint
+vset Component on
+vset Solder off
+repaint
+repaint
+vset Solder on
+repaint
+vset Solder off
+repaint
+quit -c
+quit -c

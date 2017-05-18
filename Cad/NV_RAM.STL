@@ -1,0 +1,63 @@
+* C:\Work\Diplom.!!!\Cad\nv_ram.stl written on Sun May 14 22:27:01 2000
+* by Stimulus Editor -- Serial Number: -1074314633 -- Version 8.0
+;!Stimulus Get
+;! Reset Digital AUTO_FD Digital INIT Digital SLCT_IN Digital STROBE Digital DBus Digital Ctrl Digital QBus Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 200us
+;!ManualUniverse
+;!Xuniverse 200us
+;!XminRes 1us
+;!YminRes 1n
+;!Ok
+.STIMULUS Ctrl STIM (1, 1)
++   +0s 1
++   20us 0
++   160us 1
+.STIMULUS DBus STIM (8, 11111111) ;! Hex
++   +0s 00000000
++   42us 00011011
++   53us 00011000
++   63us 01011010
++   83us 00011011
++   93us 00111000
++   113us 01111000
+.STIMULUS STROBE STIM (1, 1)
++   +0s 1
++   30us 0
++   150us 1
+.STIMULUS SLCT_IN STIM (1, 1)
++   +0s 0
++   70us 1
++   80us 0
++   130us 1
++   150us 0
+.STIMULUS INIT STIM (1, 1)
++   +0s 1
++   40us 0
++   60us 1
++   80us 0
++   100us 1
++   110us 0
++   120us 1
+.STIMULUS Reset STIM (1, 1)
++   +0s 0
++   3us 1
+.STIMULUS AUTO_FD STIM (1, 1)
++   +0s 1
++   40us 0
++   50us 1
++   60us 0
++   70us 1
++   80us 0
++   90us 1
++   100us 0
++   110us 1
++   120us 0
++   130us 1
+.STIMULUS QBus STIM (8, 11111111) ;! Hex
++   +0s ZZZZZZZZ
++   100us 01011010
++   110us ZZZZZZZZ
++   120us 01011010
++   130us ZZZZZZZZ

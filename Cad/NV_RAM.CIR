@@ -1,0 +1,23 @@
+* C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+* Schematics Version 8.0 - July 1997
+* Sun Jun 11 18:45:48 2000
+
+
+
+** Analysis setup **
+.tran 1us 200us
+.STMLIB "nv_ram.stl"
+
+
+* From [SCHEMATICS NETLIST] section of msim.ini:
+.lib "nom.lib"
+
+.INC "nv_ram.net"
+.INC "nv_ram.als"
+
+
+.probe
+
+
+.END

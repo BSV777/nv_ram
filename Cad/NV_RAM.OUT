@@ -1,0 +1,884 @@
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 8.0 - July 1997
+* Sun Jun 11 18:45:48 2000
+
+
+
+** Analysis setup **
+.tran 1us 200us
+.STMLIB "nv_ram.stl"
+
+
+* From [SCHEMATICS NETLIST] section of msim.ini:
+.lib "nom.lib"
+
+.INC "nv_ram.net"
+
+**** INCLUDING nv_ram.net ****
+* Schematics Netlist *
+
+
+
+X_U6B         $N_0001 $N_0001 AL $G_DPWR $G_DGND 74LS00 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U6C         Z $N_0002 RG $G_DPWR $G_DGND 74LS00 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+R_R6         CS $N_0003  1k  
+X_U6D         STROBE STROBE $N_0002 $G_DPWR $G_DGND 74LS00 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM13         STIM(1,0) $G_DPWR $G_DGND STROBE IO_STM STIMULUS=STROBE
+U_DSTM10         STIM(1,0) $G_DPWR $G_DGND AUTO_FD IO_STM STIMULUS=AUTO_FD
+U_DSTM11         STIM(1,0) $G_DPWR $G_DGND INIT IO_STM STIMULUS=INIT
+U_DSTM12         STIM(1,0) $G_DPWR $G_DGND SLCT_IN IO_STM STIMULUS=SLCT_IN
+R_R1         +5v $N_0004  1k  
+X_U1         $N_0004 0 0 AUTO_FD INIT SLCT_IN $N_0005 $N_0001 CS Z $N_0006
++  $N_0007 $N_0008 $N_0009 $G_DPWR $G_DGND 74ALS138 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U6A         $N_0005 $N_0005 AH $G_DPWR $G_DGND 74LS00 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM9         STIM(1,0) $G_DPWR $G_DGND $N_0004 IO_STM STIMULUS=Reset
+R_R8         $N_0010 +5v  1k  
+Q_Q1         0 $N_0003 $N_0011 TIP30
+R_R9         $N_0011 +5v  1k  
+X_U2         RG AH D0 D1 D2 D3 D4 D5 D6 D7 A5 A6 A7 A8 A9 A10 A11 A12 $G_DPWR
++  $G_DGND 74AS573 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+R_R5         +5v WR  1k  
+R_R7         WR $N_0012  1k  
+U_DSTM14         STIM(8,0) $G_DPWR $G_DGND Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0 IO_STM
++  STIMULUS=QBus
+X_U5         0 Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 L/H ERROR SLCT PE ASK $G_DPWR $G_DGND
++  74ALS257 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM15         STIM(1,0) $G_DPWR $G_DGND BUSY IO_STM STIMULUS=Ctrl
+Q_Q2         0 $N_0012 $N_0010 TIP30
+R_R10         L/H +5v  10k  
+X_U4         D0 D1 D2 D3 D4 D5 D6 D7 WR WR Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 $G_DPWR
++  $G_DGND 74LS244 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3         RG AL D0 D1 D2 D3 D4 D5 D6 D7 A0 A1 A2 A3 A4 WR L/H $N_0029
++  $G_DPWR $G_DGND 74AS573 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM5         STIM(8,0) $G_DPWR $G_DGND D7 D6 D5 D4 D3 D2 D1 D0 IO_STM
++  STIMULUS=DBus
+D_D1         PowerOn +5v D1N4148 
+Q_Q3         PowerOn $N_0030 0 TIP29
+R_R3         PowerOn +5v  1k  
+R_R2         $N_0002 $N_0030  1k  
+
+**** RESUMING nv_ram.cir ****
+.INC "nv_ram.als"
+
+
+
+**** INCLUDING nv_ram.als ****
+* Schematics Aliases *
+
+.ALIASES
+X_U6B           U6B(A=$N_0001 B=$N_0001 Y=AL PWR=$G_DPWR GND=$G_DGND )
+X_U6C           U6C(A=Z B=$N_0002 Y=RG PWR=$G_DPWR GND=$G_DGND )
+R_R6            R6(1=CS 2=$N_0003 )
+X_U6D           U6D(A=STROBE B=STROBE Y=$N_0002 PWR=$G_DPWR GND=$G_DGND )
+U_DSTM13          DSTM13(PWR=$G_DPWR GND=$G_DGND OUT0=STROBE )
+U_DSTM10          DSTM10(PWR=$G_DPWR GND=$G_DGND OUT0=AUTO_FD )
+U_DSTM11          DSTM11(PWR=$G_DPWR GND=$G_DGND OUT0=INIT )
+U_DSTM12          DSTM12(PWR=$G_DPWR GND=$G_DGND OUT0=SLCT_IN )
+R_R1            R1(1=+5v 2=$N_0004 )
+X_U1            U1(G1=$N_0004 G2Abar=0 G2Bbar=0 A=AUTO_FD B=INIT C=SLCT_IN
++  Y0=$N_0005 Y1=$N_0001 Y2=CS Y3=Z Y4=$N_0006 Y5=$N_0007 Y6=$N_0008 Y7=$N_0009
++  PWR=$G_DPWR GND=$G_DGND )
+X_U6A           U6A(A=$N_0005 B=$N_0005 Y=AH PWR=$G_DPWR GND=$G_DGND )
+U_DSTM9          DSTM9(PWR=$G_DPWR GND=$G_DGND OUT0=$N_0004 )
+R_R8            R8(1=$N_0010 2=+5v )
+Q_Q1            Q1(c=0 b=$N_0003 e=$N_0011 )
+R_R9            R9(1=$N_0011 2=+5v )
+X_U2            U2(OCbar=RG C=AH 1D=D0 2D=D1 3D=D2 4D=D3 5D=D4 6D=D5 7D=D6
++  8D=D7 1Q=A5 2Q=A6 3Q=A7 4Q=A8 5Q=A9 6Q=A10 7Q=A11 8Q=A12 PWR=$G_DPWR
++  GND=$G_DGND )
+R_R5            R5(1=+5v 2=WR )
+R_R7            R7(1=WR 2=$N_0012 )
+U_DSTM14          DSTM14(PWR=$G_DPWR GND=$G_DGND OUT0=Q7 OUT1=Q6 OUT2=Q5
++  OUT3=Q4 OUT4=Q3 OUT5=Q2 OUT6=Q1 OUT7=Q0 )
+X_U5            U5(Gbar=0 1A=Q0 1B=Q1 2A=Q2 2B=Q3 3A=Q4 3B=Q5 4A=Q6 4B=Q7
++  Abar/B=L/H 1Y=ERROR 2Y=SLCT 3Y=PE 4Y=ASK PWR=$G_DPWR GND=$G_DGND )
+U_DSTM15          DSTM15(PWR=$G_DPWR GND=$G_DGND OUT0=BUSY )
+_   P4(A1=$N_0013 A2=BUSY A3=$N_0014 A4=$N_0015 A5=$N_0016 A6=$N_0017 A7=Q3
++  A8=Q2 A9=Q4 A10=Q1 A11=Q5 A12=Q0 A13=Q6 A14=A0 A15=Q7 A16=A1 A17=$N_0011
++  A18=A2 A19=A10 A20=A3 B1=$N_0010 B2=A4 B3=A11 B4=A5 B5=A9 B6=A6 B7=A8 B8=A7
++  B9=A12 B10=$N_0018 B11=$N_0019 B12=$N_0020 B13=$N_0021 B14=$N_0022 B15=$N_0023
++  B16=$N_0024 B17=$N_0025 B18=$N_0026 B19=$N_0027 B20=$N_0028 )
+Q_Q2            Q2(c=0 b=$N_0012 e=$N_0010 )
+R_R10           R10(1=L/H 2=+5v )
+X_U4            U4(1A1=D0 1A2=D1 1A3=D2 1A4=D3 2A1=D4 2A2=D5 2A3=D6 2A4=D7
++  1Gbar=WR 2Gbar=WR 1Y1=Q0 1Y2=Q1 1Y3=Q2 1Y4=Q3 2Y1=Q4 2Y2=Q5 2Y3=Q6 2Y4=Q7
++  PWR=$G_DPWR GND=$G_DGND )
+X_U3            U3(OCbar=RG C=AL 1D=D0 2D=D1 3D=D2 4D=D3 5D=D4 6D=D5 7D=D6
++  8D=D7 1Q=A0 2Q=A1 3Q=A2 4Q=A3 5Q=A4 6Q=WR 7Q=L/H 8Q=$N_0029 PWR=$G_DPWR
++  GND=$G_DGND )
+U_DSTM5          DSTM5(PWR=$G_DPWR GND=$G_DGND OUT0=D7 OUT1=D6 OUT2=D5 OUT3=D4
++  OUT4=D3 OUT5=D2 OUT6=D1 OUT7=D0 )
+_   P1(1=STROBE 2=D0 3=D1 4=D2 5=D3 6=D4 7=D5 8=D6 9=D7 10=ASK 11=BUSY 12=PE
++  13=SLCT 14=AUTO_FD 15=ERROR 16=INIT 17=SLCT_IN 18=0 19=0 20=0 21=0 22=0 23=0
++  24=0 25=0 )
+D_D1            D1(1=PowerOn 2=+5v )
+Q_Q3            Q3(c=PowerOn b=$N_0030 e=0 )
+R_R3            R3(1=PowerOn 2=+5v )
+R_R2            R2(1=$N_0002 2=$N_0030 )
+_    _(AL=AL)
+_    _(Z=Z)
+_    _(RG=RG)
+_    _(CS=CS)
+_    _(STROBE=STROBE)
+_    _(AUTO_FD=AUTO_FD)
+_    _(INIT=INIT)
+_    _(SLCT_IN=SLCT_IN)
+_    _(AH=AH)
+_    _(D0=D0)
+_    _(D1=D1)
+_    _(D2=D2)
+_    _(D3=D3)
+_    _(D4=D4)
+_    _(D5=D5)
+_    _(D6=D6)
+_    _(D7=D7)
+_    _(A5=A5)
+_    _(A6=A6)
+_    _(A7=A7)
+_    _(A8=A8)
+_    _(A9=A9)
+_    _(A10=A10)
+_    _(A11=A11)
+_    _(A12=A12)
+_    _(WR=WR)
+_    _(Q7=Q7)
+_    _(Q6=Q6)
+_    _(Q5=Q5)
+_    _(Q4=Q4)
+_    _(Q3=Q3)
+_    _(Q2=Q2)
+_    _(Q1=Q1)
+_    _(Q0=Q0)
+_    _(L/H=L/H)
+_    _(ERROR=ERROR)
+_    _(SLCT=SLCT)
+_    _(PE=PE)
+_    _(ASK=ASK)
+_    _(BUSY=BUSY)
+_    _(A0=A0)
+_    _(A1=A1)
+_    _(A2=A2)
+_    _(A3=A3)
+_    _(A4=A4)
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+_    _(PowerOn=PowerOn)
+_    _(+5v=+5v)
+.ENDALIASES
+
+
+**** RESUMING nv_ram.cir ****
+.probe
+
+
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node $N_0004
+*
+* Moving X_U1.UALS138LOG:IN1 from analog node $N_0004 to new digital node $N_0004$AtoD
+X$$N_0004_AtoD1
++ $N_0004
++ $N_0004$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_ALS00
++       PARAMS: CAPACITANCE=   0     
+* Moving U_DSTM9:OUT1 from analog node $N_0004 to new digital node $N_0004$DtoA
+X$$N_0004_DtoA1
++ $N_0004$DtoA
++ $N_0004
++ $G_DPWR
++ $G_DGND
++ DtoA_STM
++       PARAMS: DRVH=   0      DRVL=   0      CAPACITANCE=   0     
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_U5.UALS257LOG:IN1 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_ALS00
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U1.UALS138LOG:IN3 from analog node 0 to new digital node 0$AtoD2
+X$0_AtoD2
++ 0
++ 0$AtoD2
++ $G_DPWR
++ $G_DGND
++ AtoD_ALS00
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U1.UALS138LOG:IN2 from analog node 0 to new digital node 0$AtoD3
+X$0_AtoD3
++ 0
++ 0$AtoD3
++ $G_DPWR
++ $G_DGND
++ AtoD_ALS00
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node L/H
+*
+* Moving X_U5.UALS257LOG:IN10 from analog node L/H to new digital node L/H$AtoD
+X$L/H_AtoD1
++ L/H
++ L/H$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_ALS00
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U3.U2:OUT7 from analog node L/H to new digital node L/H$DtoA
+X$L/H_DtoA1
++ L/H$DtoA
++ L/H
++ $G_DPWR
++ $G_DGND
++ DtoA_AS00
++       PARAMS: DRVH=  19.9   DRVL=  19.8   CAPACITANCE=   0     
+*
+* Analog/Digital interface for node $N_0002
+*
+* Moving X_U6C.U1:IN2 from analog node $N_0002 to new digital node $N_0002$AtoD
+X$$N_0002_AtoD1
++ $N_0002
++ $N_0002$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U6D.U1:OUT1 from analog node $N_0002 to new digital node $N_0002$DtoA
+X$$N_0002_DtoA1
++ $N_0002$DtoA
++ $N_0002
++ $G_DPWR
++ $G_DGND
++ DtoA_LS
++       PARAMS: DRVH= 108    DRVL= 157    CAPACITANCE=   0     
+*
+* Analog/Digital interface for node WR
+*
+* Moving X_U4.UAB:IN2 from analog node WR to new digital node WR$AtoD
+X$WR_AtoD1
++ WR
++ WR$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U4.UAB:IN1 from analog node WR to new digital node WR$AtoD2
+X$WR_AtoD2
++ WR
++ WR$AtoD2
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U3.U2:OUT6 from analog node WR to new digital node WR$DtoA
+X$WR_DtoA1
++ WR$DtoA
++ WR
++ $G_DPWR
++ $G_DGND
++ DtoA_AS00
++       PARAMS: DRVH=  19.9   DRVL=  19.8   CAPACITANCE=   0     
+*
+* Analog/Digital interface for node CS
+*
+* Moving X_U1.UALS138DLY:OUT3 from analog node CS to new digital node CS$DtoA
+X$CS_DtoA1
++ CS$DtoA
++ CS
++ $G_DPWR
++ $G_DGND
++ DtoA_ALS00
++       PARAMS: DRVH=  35.3   DRVL=  46.9   CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+
+X$DIGIFPWR 0 DIGIFPWR
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 200us
+;!ManualUniverse
+;!Xuniverse 200us
+;!XminRes 1us
+;!YminRes 1n
+;!Ok
+.STIMULUS Ctrl STIM (1, 1)
++   +0s 1
++   20us 0
++   160us 1
+.STIMULUS DBus STIM (8, 11111111) ;! Hex
++   +0s 00000000
++   42us 00011011
++   53us 00011000
++   63us 01011010
++   83us 00011011
++   93us 00111000
++   113us 01111000
+.STIMULUS STROBE STIM (1, 1)
++   +0s 1
++   30us 0
++   150us 1
+.STIMULUS SLCT_IN STIM (1, 1)
++   +0s 0
++   70us 1
++   80us 0
++   130us 1
++   150us 0
+.STIMULUS INIT STIM (1, 1)
++   +0s 1
++   40us 0
++   60us 1
++   80us 0
++   100us 1
++   110us 0
++   120us 1
+.STIMULUS Reset STIM (1, 1)
++   +0s 0
++   3us 1
+.STIMULUS AUTO_FD STIM (1, 1)
++   +0s 1
++   40us 0
++   50us 1
++   60us 0
++   70us 1
++   80us 0
++   90us 1
++   100us 0
++   110us 1
++   120us 0
++   130us 1
+.STIMULUS QBus STIM (8, 11111111) ;! Hex
++   +0s ZZZZZZZZ
++   100us 01011010
++   110us ZZZZZZZZ
++   120us 01011010
++   130us ZZZZZZZZ
+.STIMULUS STROBE STIM (1, 1)
++   +0s 1
++   30us 0
++   150us 1
+.STIMULUS AUTO_FD STIM (1, 1)
++   +0s 1
++   40us 0
++   50us 1
++   60us 0
++   70us 1
++   80us 0
++   90us 1
++   100us 0
++   110us 1
++   120us 0
++   130us 1
+.STIMULUS INIT STIM (1, 1)
++   +0s 1
++   40us 0
++   60us 1
++   80us 0
++   100us 1
++   110us 0
++   120us 1
+.STIMULUS SLCT_IN STIM (1, 1)
++   +0s 0
++   70us 1
++   80us 0
++   130us 1
++   150us 0
+.STIMULUS Reset STIM (1, 1)
++   +0s 0
++   3us 1
+.STIMULUS QBus STIM (8, 11111111) ;! Hex
++   +0s ZZZZZZZZ
++   100us 01011010
++   110us ZZZZZZZZ
++   120us 01011010
++   130us ZZZZZZZZ
+.STIMULUS Ctrl STIM (1, 1)
++   +0s 1
++   20us 0
++   160us 1
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         D74SCLMP        D74             D74S            
+          IS    2.682000E-09   10.000000E-12  100.000000E-18    1.000000E-12 
+           N    1.836                                                        
+         ISR    1.565000E-09                                                 
+         IKF     .04417                                                      
+          BV  100                                                            
+         IBV  100.000000E-06                                                 
+          RS     .5664          2              25              25            
+          TT   11.540000E-09                                                 
+         CJO    4.000000E-12    2.000000E-12    2.000000E-12    2.000000E-12 
+          VJ     .5              .7                              .7          
+           M     .3333                                                       
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               TIP30           TIP29           
+               PNP             NPN             
+          IS   51.230000E-15    2.447000E-12 
+          BF  434.1           208.2          
+          NF    1               1            
+         VAF  100             100            
+         IKF     .3883           .9743       
+         ISE   51.230000E-15   70.690000E-12 
+          NE    1.22            1.565        
+          BR   55.47           12.59         
+          NR    1               1            
+         IKR   10.87            3.86         
+         ISC   51.230000E-15   11.680000E-09 
+          NC    1.205           1.835        
+          NK     .5544           .6134       
+          RB     .1              .1          
+          RC     .3443           .4685       
+         CJE  179.900000E-12  188.500000E-12 
+         MJE     .4294           .4878       
+         CJC  136.900000E-12  142.000000E-12 
+         MJC     .3155           .4353       
+          TF   13.050000E-09   19.850000E-09 
+         XTF    1.573           5.945        
+         VTF   10              10            
+         ITF    6.85          164.1          
+          TR   20.250000E-09  194.200000E-09 
+         XTB    2.2             1.5          
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DINSTM          DIN74LS         DIN74AS00       DIN74ALS00      
+        FILE DSO_DTOA        DSO_DTOA        DSO_DTOA        DSO_DTOA        
+      FORMAT    6               6               6               6            
+    TIMESTEP  100.000000E-12  100.000000E-12  100.000000E-12  100.000000E-12 
+      S0NAME 0               0               0               0               
+       S0TSW  500.000000E-12    5.000000E-09  600.000000E-12    1.000000E-09 
+       S0RLO     .5             1               8.28           26            
+       S0RHI    1.000000E+03  100.000000E+03  337               1.060000E+03 
+      S1NAME 1               1               1               1               
+       S1TSW  500.000000E-12    4.500000E-09  600.000000E-12    1.000000E-09 
+       S1RLO    1.000000E+03  100.000000E+03   85             167            
+       S1RHI     .5             1              36.4            71.4          
+      S2NAME X               X               X               X               
+       S2TSW  500.000000E-12    4.500000E-09  600.000000E-12    1.000000E-09 
+       S2RLO     .429          30.9            20.5            49.4          
+       S2RHI    1.16          100              47.8           127            
+      S3NAME R               R               R               R               
+       S3TSW  500.000000E-12    4.500000E-09  600.000000E-12    1.000000E-09 
+       S3RLO     .429          30.9            20.5            49.4          
+       S3RHI    1.16          100              47.8           127            
+      S4NAME F               F               F               F               
+       S4TSW  500.000000E-12    4.500000E-09  600.000000E-12    1.000000E-09 
+       S4RLO     .429          30.9            20.5            49.4          
+       S4RHI    1.16          100              47.8           127            
+      S5NAME Z               Z               Z               Z               
+       S5TSW  500.000000E-12    4.500000E-09  600.000000E-12    1.000000E-09 
+       S5RLO    1.000000E+06  200.000000E+03  200.000000E+03  200.000000E+03 
+       S5RHI    1.000000E+06  200.000000E+03  200.000000E+03  200.000000E+03 
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74ALS00       DO74LS          
+        FILE DSO_ATOD        DSO_ATOD        
+      FORMAT    6               6            
+     CHGONLY    1               1            
+    TIMESTEP  100.000000E-12  100.000000E-12 
+      S0NAME X               X               
+       S0VHI    2               2            
+       S0VLO     .8              .8          
+      S1NAME 0               0               
+       S1VHI     .8              .8          
+       S1VLO   -1.5            -1.5          
+      S2NAME R               R               
+       S2VHI    1.45            1.2          
+       S2VLO     .8              .8          
+      S3NAME R               R               
+       S3VHI    2               2            
+       S3VLO    1.35            1.1          
+      S4NAME X               X               
+       S4VHI    2               2            
+       S4VLO     .8              .8          
+      S5NAME 1               1               
+       S5VHI    7               7            
+       S5VLO    2               2            
+      S6NAME F               F               
+       S6VHI    2               2            
+       S6VLO    1.35            1.1          
+      S7NAME F               F               
+       S7VHI    1.45            1.2          
+       S7VLO     .8              .8          
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_LS00          D0_GATE         
+      TPLHMN    3.600000E-09    0            
+      TPLHTY    9.000000E-09    0            
+      TPLHMX   15.000000E-09    0            
+      TPHLMN    4.000000E-09    0            
+      TPHLTY   10.000000E-09    0            
+      TPHLMX   15.000000E-09    0            
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     Digital Tri Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_LS244         D_AS573_2       
+      TPLHMN    4.800000E-09    3.000000E-09 
+      TPLHTY   12.000000E-09    4.500000E-09 
+      TPLHMX   18.000000E-09    6.000000E-09 
+      TPHLMN    4.800000E-09    3.000000E-09 
+      TPHLTY   12.000000E-09    4.500000E-09 
+      TPHLMX   18.000000E-09    6.000000E-09 
+      TPZHMN    6.000000E-09    2.000000E-09 
+      TPZHTY   15.000000E-09    4.250000E-09 
+      TPZHMX   23.000000E-09    6.500000E-09 
+      TPZLMN    8.000000E-09    4.000000E-09 
+      TPZLTY   20.000000E-09    6.750000E-09 
+      TPZLMX   30.000000E-09    9.500000E-09 
+      TPLZMN    4.000000E-09    2.000000E-09 
+      TPLZTY   10.000000E-09    4.500000E-09 
+      TPLZMX   20.000000E-09    7.000000E-09 
+      TPHZMN    6.000000E-09    2.000000E-09 
+      TPHZTY   15.000000E-09    4.250000E-09 
+      TPHZMX   25.000000E-09    6.500000E-09 
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     Digital Gated FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_AS573_1       
+    TPDQLHMN    0            
+    TPDQLHTY    0            
+    TPDQLHMX    0            
+    TPDQHLMN    0            
+    TPDQHLTY    0            
+    TPDQHLMX    0            
+    TPGQLHMN    3.000000E-09 
+    TPGQLHTY    4.250000E-09 
+    TPGQLHMX    5.500000E-09 
+    TPGQHLMN    1.000000E-09 
+    TPGQHLTY    1.250000E-09 
+    TPGQHLMX    1.500000E-09 
+   TPPCQLHMN    0            
+   TPPCQLHTY    0            
+   TPPCQLHMX    0            
+   TPPCQHLMN    0            
+   TPPCQHLTY    0            
+   TPPCQHLMX    0            
+      TWGHMN    4.500000E-09 
+      TWGHTY    4.500000E-09 
+      TWGHMX    4.500000E-09 
+     TWPCLMN    0            
+     TWPCLTY    0            
+     TWPCLMX    0            
+     TSUDGMN    2.000000E-09 
+     TSUDGTY    2.000000E-09 
+     TSUDGMX    2.000000E-09 
+   TSUPCGHMN    0            
+   TSUPCGHTY    0            
+   TSUPCGHMX    0            
+      THDGMN    3.000000E-09 
+      THDGTY    3.000000E-09 
+      THDGMX    3.000000E-09 
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_ALS00        IO_LS           IO_AS00         
+        DRVL    0              46.9           157              19.8          
+        DRVH    0              35.3           108              19.9          
+       AtoD1                 AtoD_ALS00      AtoD_LS         AtoD_AS00       
+       AtoD2                 AtoD_ALS00_NX   AtoD_LS_NX      AtoD_AS00_NX    
+       AtoD3                 AtoD_ALS00      AtoD_LS         AtoD_AS00       
+       AtoD4                 AtoD_ALS00_NX   AtoD_LS_NX      AtoD_AS00_NX    
+       DtoA1 DtoA_STM        DtoA_ALS00      DtoA_LS         DtoA_AS00       
+       DtoA2 DtoA_STM        DtoA_ALS00      DtoA_LS         DtoA_AS00       
+       DtoA3 DtoA_STM        DtoA_ALS00      DtoA_LS         DtoA_AS00       
+       DtoA4 DtoA_STM        DtoA_ALS00      DtoA_LS         DtoA_AS00       
+      TSWHL1                  529.000000E-12    2.724000E-09  298.000000E-12 
+      TSWHL2                  513.000000E-12    2.724000E-09  276.000000E-12 
+      TSWHL3                  529.000000E-12    2.724000E-09  298.000000E-12 
+      TSWHL4                  513.000000E-12    2.724000E-09  276.000000E-12 
+      TSWLH1                  695.000000E-12    2.104000E-09  400.000000E-12 
+      TSWLH2                  718.000000E-12    2.104000E-09  426.000000E-12 
+      TSWLH3                  695.000000E-12    2.104000E-09  400.000000E-12 
+      TSWLH4                  718.000000E-12    2.104000E-09  426.000000E-12 
+       TPWRT  100.000000E+03    2.900000E-09  100.000000E+03    1.500000E-09 
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   CS)    3.5025  (   WR)     .7003  (  +5v)     .3657  (  L/H)     .6505      
+
+($G_DGND)    0.0000                   ($G_DPWR)    5.0000                       
+
+($N_0002)     .1088                   ($N_0003)    3.5025                       
+
+($N_0004)     .0027                   ($N_0010)     .3657                       
+
+($N_0011)     .3657                   ($N_0012)     .7003                       
+
+($N_0030)     .1088                   (PowerOn)     .3657                       
+
+(X$0_AtoD1.1)     .2107               (X$0_AtoD1.2)     .1053                   
+
+(X$0_AtoD1.3)     .6595               (X$0_AtoD2.1)     .2107                   
+
+(X$0_AtoD2.2)     .1053               (X$0_AtoD2.3)     .6595                   
+
+(X$0_AtoD3.1)     .2107               (X$0_AtoD3.2)     .1053                   
+
+(X$0_AtoD3.3)     .6595               (X$L/H_AtoD1.1)     .8532                 
+
+(X$L/H_AtoD1.2)     .4266             (X$L/H_AtoD1.3)    1.3058                 
+
+(X$$N_0004_AtoD1.1)     .2133         (X$$N_0004_AtoD1.2)     .1067             
+
+(X$$N_0004_AtoD1.3)     .6622         (X$$N_0002_DtoA1.DGND_OL)     .1086       
+
+(X$$N_0002_DtoA1.DPWR_OH)    3.4493   
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+( X_U5.3A) : 0     (      Q7) : 0     (      AL) : 0     (      A3) : Z         
+
+(X_U3.4QI) : X     ( X_U5.3B) : 0     (      Q4) : 0     (      A0) : Z         
+
+(      Q1) : 0     (X_U3.1QI) : X     ($N_0004$AtoD) : 0                        
+
+(   ERROR) : 0     ( X_U5.2A) : 0     ( $N_0009) : 1     ( X_U5.2B) : 0         
+
+(     A10) : Z     ( X_U1.Y7) : 1     (    BUSY) : 1     (X_U3.6QI) : X         
+
+(X_U2.2QI) : X     (      D5) : 0     ( X_U4.G1) : 1     ( X_U1.Y0) : 1         
+
+(      D2) : 0     ( WR$AtoD) : 0     (   $D_HI) : 1     (X_U3.3QI) : X         
+
+( AUTO_FD) : 1     ( X_U4.G2) : 1     ( 0$AtoD3) : 0     (      A7) : Z         
+
+(  X_U1.C) : 0     ( CS$DtoA) : 1     (  STROBE) : 1     ($N_0002$DtoA) : 0     
+
+(      A4) : Z     (L/H$AtoD) : 0     (      Q5) : 0     (X_U5.GBAR) : 0        
+
+(      A1) : Z     (X_U3.8QI) : X     (    INIT) : 1     (X_U2.4QI) : X         
+
+(      Q2) : 0     ( $N_0005) : 1     ( X_U5.4A) : 0     (X_U3.5QI) : X         
+
+(X_U2.1QI) : X     ( $N_0006) : 1     ( X_U5.4B) : 0     (     A11) : Z         
+
+( X_U5.Y4) : 0     ( X_U1.Y4) : 1     ($N_0002$AtoD) : 0                        
+
+(      D6) : 0     ( WR$DtoA) : Z     ( X_U5.Y1) : 0     ( X_U1.Y1) : 1         
+
+(  0$AtoD) : 0     (X_U2.6QI) : X     ( X_U3.OC) : 0     (      D3) : 0         
+
+( X_U5.Y2) : 0     ( X_U1.Y2) : 1     (   $D_NC) : Z     (      A8) : Z         
+
+(X_U3.7QI) : X     (L/H$DtoA) : Z     (      PE) : 0     (      D0) : 0         
+
+(X_U2.3QI) : X     (      A5) : Z     (WR$AtoD2) : 0     (      Q6) : 0         
+
+(      A2) : Z     ( $N_0001) : 1     ( X_U5.1A) : 0     (      Q3) : 0         
+
+(      AH) : 0     (X_U2.8QI) : X     ( X_U5.1B) : 0     (X_U5.SEL) : 0         
+
+(      Q0) : 0     (       Z) : 1     ( $N_0007) : 1     (X_U2.5QI) : X         
+
+( X_U2.OC) : 0     (     A12) : Z     ( $N_0008) : 1     ( X_U1.Y5) : 1         
+
+(X_U3.2QI) : X     (      D7) : 0     ( $N_0029) : Z     ( X_U1.Y6) : 1         
+
+($N_0004$DtoA) : 0                    (      D4) : 0     ( X_U5.Y3) : 0         
+
+( X_U1.Y3) : 1     (    SLCT) : 0     (      A9) : Z     ( SLCT_IN) : 0         
+
+(  X_U1.A) : 1     (      D1) : 0     (     ASK) : 0     ( 0$AtoD2) : 0         
+
+(      A6) : Z     (X_U1.ENABLE) : 0  (      RG) : 1     (X_U2.7QI) : X         
+
+(  X_U1.B) : 1     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    X$DIGIFPWR.VDPWR  -2.611E-02
+    X$DIGIFPWR.VDGND  -4.019E-05
+
+    TOTAL POWER DISSIPATION   1.31E-01  WATTS
+
+
+**** 06/11/100 18:45:59 **** Win95 PSpice 8.0 (July 1997) ***** ID# 305419896 
+
+ * C:\Work\Diplom.!!!\Cad\nv_ram.sch
+
+
+ ****     SIMULATION ERRORS
+
+
+******************************************************************************
+
+
+
+
+DIGITAL Message ID#5 (WARNING):
+INVALID TRANSITION Hazard at time 42.01us
+  on node "Q4".
+  F -> R transition not allowed; changed to X
+
+DIGITAL Message ID#6 (WARNING):
+INVALID TRANSITION Hazard at time 42.01us
+  on node "Q0".
+  F -> R transition not allowed; changed to X
+
+DIGITAL Message ID#7 (WARNING):
+INVALID TRANSITION Hazard at time 42.01us
+  on node "Q1".
+  F -> R transition not allowed; changed to X
+
+DIGITAL Message ID#8 (WARNING):
+INVALID TRANSITION Hazard at time 42.01us
+  on node "Q3".
+  F -> R transition not allowed; changed to X
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            9.81
+

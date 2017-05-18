@@ -1,0 +1,86 @@
+*MicroSim Forward ECO Report
+
+Forward ECO's incorporated: Sat May 20 15:05:07 2000
+
+Beginning of automatic changes.
+        Delete component with ref C1.
+        Delete component with ref J1.
+        Delete component with ref R4.
+        Delete pin R7.1 from net A14(R7.1,U4.1,U3.14,R5.2).
+        Delete pin R5.2 from net A14(R7.1,U4.1,U3.14,R5.2).
+        Delete pin U4.19 from net A4(U3.15,J1.19,U4.19).
+        Rename net NN_0010 to STROBE(P1.1,U6.12,U6.13).
+        Rename net NN_0008 to PowerOn(R2.1,U6.10,U6.11).
+        Rename net NN_0003 to RG(U2.1,U3.1,U6.8).
+        Rename net A14 to NN_0014(U4.1,U3.14,U4.19).
+        Rename net NN_0001 to AH(U6.1,U1.15,U6.2).
+        Rename net NN_0006 to AL(U1.14,U6.4,U6.5).
+        Rename net NN_0016 to CS(R6.1,U1.13).
+        Rename net SEL1 to AUTO_FD(U1.1,P1.14).
+        Rename net A15 to L/H(U5.1,U3.13).
+        Rename net CTRL4 to ASK(P1.10,U5.12).
+        Rename net CTRL3 to PE(P1.12,U5.9).
+        Rename net NN_0007 to Z(U1.12,U6.9).
+        Rename net CTRL2 to SLCT(P1.13,U5.7).
+        Rename net CTRL1 to ERROR(P1.15,U5.4).
+        Rename net SEL2 to INIT(P1.16,U1.2).
+        Rename net SEL3 to SLCT_IN(P1.17,U1.3).
+        Add component EDGE40M-B in a EDGE40 package and ref P4.
+        Add pin P4.B1 to net NN_0015(R8.1,Q2.3,P4.B1).
+        Add pin P4.A17 to net NN_0012(R9.1,Q1.3,P4.A17).
+        Add pin U4.19 to net NN_0014(U4.1,U3.14,U4.19).
+        Add pin P4.A11 to net Q5(U5.10,U4.7,P4.A11).
+        Add pin P4.A9 to net Q4(U5.11,U4.9,P4.A9).
+        Add pin P4.A7 to net Q3(U4.12,U5.6,P4.A7).
+        Add pin P4.A15 to net Q7(U5.13,U4.3,P4.A15).
+        Add pin P4.A8 to net Q2(U4.14,U5.5,P4.A8).
+        Add pin P4.A13 to net Q6(U5.14,U4.5,P4.A13).
+        Add pin P4.A10 to net Q1(U4.16,U5.3,P4.A10).
+        Add pin P4.A12 to net Q0(U4.18,U5.2,P4.A12).
+        Add a net WR.
+        Add pin R7.1 to net WR(R7.1,R5.2).
+        Add pin R5.2 to net WR(R7.1,R5.2).
+        Add a net BUSY.
+        Add pin P1.11 to net BUSY(P1.11,P4.A2).
+        Add pin P4.A2 to net BUSY(P1.11,P4.A2).
+        Add a net A12.
+        Add pin U2.12 to net A12(U2.12,P4.B9).
+        Add pin P4.B9 to net A12(U2.12,P4.B9).
+        Add a net A11.
+        Add pin U2.13 to net A11(U2.13,P4.B3).
+        Add pin P4.B3 to net A11(U2.13,P4.B3).
+        Add a net A10.
+        Add pin U2.14 to net A10(U2.14,P4.A19).
+        Add pin P4.A19 to net A10(U2.14,P4.A19).
+        Add a net A9.
+        Add pin U2.15 to net A9(U2.15,P4.B5).
+        Add pin P4.B5 to net A9(U2.15,P4.B5).
+        Add a net A4.
+        Add pin U3.15 to net A4(U3.15,P4.B2).
+        Add pin P4.B2 to net A4(U3.15,P4.B2).
+        Add a net A8.
+        Add pin U2.16 to net A8(U2.16,P4.B7).
+        Add pin P4.B7 to net A8(U2.16,P4.B7).
+        Add a net A3.
+        Add pin U3.16 to net A3(U3.16,P4.A20).
+        Add pin P4.A20 to net A3(U3.16,P4.A20).
+        Add a net A7.
+        Add pin U2.17 to net A7(U2.17,P4.B8).
+        Add pin P4.B8 to net A7(U2.17,P4.B8).
+        Add a net A2.
+        Add pin U3.17 to net A2(U3.17,P4.A18).
+        Add pin P4.A18 to net A2(U3.17,P4.A18).
+        Add a net A6.
+        Add pin U2.18 to net A6(U2.18,P4.B6).
+        Add pin P4.B6 to net A6(U2.18,P4.B6).
+        Add a net A1.
+        Add pin U3.18 to net A1(U3.18,P4.A16).
+        Add pin P4.A16 to net A1(U3.18,P4.A16).
+        Add a net A5.
+        Add pin U2.19 to net A5(U2.19,P4.B4).
+        Add pin P4.B4 to net A5(U2.19,P4.B4).
+        Add a net A0.
+        Add pin U3.19 to net A0(U3.19,P4.A14).
+        Add pin P4.A14 to net A0(U3.19,P4.A14).
+End of automatic changes.
+

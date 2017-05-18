@@ -1,0 +1,307 @@
+*PCBoards netlist extracted from  -- C:\Work\Diplom.!!!\Cad\nv_ram.pca --  by MicroSim PCBoards on Sun Jun 11 18:46:57 2000
+*component R RC05 R6 1.6 0.1 180 Component NONE
+@attribute VALUE=1k
+@attribute REFDES=R6
+display  [SilkTop] SilkTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=R
+display  [AssyDrwTop] AssemblyTop 0.21 -0.13 4 0 0.06 0.008 0 0 0
+*component DB25M-B DSHELL25-M P1 0.946 -1.544 0 Component NONE
+@attribute REFDES=P1
+display  [AssyDrwTop] AssemblyTop 0.65 0.175 4 0 0.06 0.008 0 0 0
+display  [SilkTop] SilkTop 0.65 0.175 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=DB25M-B
+display  [AssyDrwTop] AssemblyTop 0.65 -0.225 4 0 0.06 0.008 0 0 0
+*component 74ALS257 DIP16 U5 -0.55 1.55 0 Component NONE
+@attribute REFDES=U5
+display  [SilkTop] SilkTop -0.115 0.15 4 90 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop -0.115 0.15 4 90 0.06 0.008 0 0 0
+@attribute TYPE_NAME=74ALS257
+display  [AssyDrwTop] AssemblyTop 0.35 -0.15 4 0 0.06 0.008 0 0 0
+*component 74LS00 DIP14 U6 3.45 -0.3 270 Component NONE
+@attribute REFDES=U6
+display  [AssyDrwTop] AssemblyTop -0.1 0.15 4 90 0.06 0.008 0 0 0
+display  [SilkTop] SilkTop -0.1 0.15 4 90 0.06 0.008 0 0 0
+@attribute TYPE_NAME=74LS00
+display  [AssyDrwTop] AssemblyTop 0.3 -0.15 4 0 0.06 0.008 0 0 0
+*component 74ALS138 DIP16 U1 2.65 -0.25 270 Component NONE
+@attribute REFDES=U1
+display  [SilkTop] SilkTop -0.115 0.15 4 90 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop -0.115 0.15 4 90 0.06 0.008 0 0 0
+@attribute TYPE_NAME=74ALS138
+display  [AssyDrwTop] AssemblyTop 0.35 -0.15 4 0 0.06 0.008 0 0 0
+*component R RC05 R9 1.2 -0.1 0 Component NONE
+@attribute VALUE=1k
+@attribute REFDES=R9
+display  [SilkTop] SilkTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=R
+display  [AssyDrwTop] AssemblyTop 0.21 -0.13 4 0 0.06 0.008 0 0 0
+*component R RC05 R8 1.2 -0.3 0 Component NONE
+@attribute VALUE=1k
+@attribute REFDES=R8
+display  [SilkTop] SilkTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=R
+display  [AssyDrwTop] AssemblyTop 0.21 -0.13 4 0 0.06 0.008 0 0 0
+*component R RC05 R7 1.6 -0.5 180 Component NONE
+@attribute VALUE=1k
+@attribute REFDES=R7
+display  [SilkTop] SilkTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=R
+display  [AssyDrwTop] AssemblyTop 0.205 -0.1 4 0 0.06 0.008 0 0 0
+*component R RC05 R5 1.2 -0.7 0 Component NONE
+@attribute VALUE=1k
+@attribute REFDES=R5
+display  [SilkTop] SilkTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=R
+display  [AssyDrwTop] AssemblyTop 0.21 -0.13 4 0 0.06 0.008 0 0 0
+*component R RC05 R1 -0.1 0.1 0 Component NONE
+@attribute VALUE=1k
+@attribute REFDES=R1
+display  [SilkTop] SilkTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=R
+display  [AssyDrwTop] AssemblyTop 0.21 -0.13 4 0 0.06 0.008 0 0 0
+*component R RC05 R2 0.3 -0.1 180 Component NONE
+@attribute VALUE=1k
+@attribute REFDES=R2
+display  [SilkTop] SilkTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=R
+display  [AssyDrwTop] AssemblyTop 0.21 -0.13 4 0 0.06 0.008 0 0 0
+*component R RC05 R3 -0.1 -0.3 0 Component NONE
+@attribute VALUE=1k
+@attribute REFDES=R3
+display  [SilkTop] SilkTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.21 0.07 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=R
+display  [AssyDrwTop] AssemblyTop 0.21 -0.13 4 0 0.06 0.008 0 0 0
+*component TIP30 TO-220AB Q1 -0.6 0 0 Component NONE
+@attribute REFDES=Q1
+display  [SilkTop] SilkTop 0.1 0.15 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.1 0.15 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=TIP30
+display  [AssyDrwTop] AssemblyTop 0.1 -0.14 4 0 0.06 0.008 0 0 0
+*component TIP29 TO-220AB Q3 -0.6 -0.3 0 Component NONE
+@attribute REFDES=Q3
+display  [SilkTop] SilkTop 0.1 0.15 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.1 0.15 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=TIP29
+display  [AssyDrwTop] AssemblyTop 0.1 -0.14 4 0 0.06 0.008 0 0 0
+*component TIP30 TO-220AB Q2 -0.6 -0.6 0 Component NONE
+@attribute REFDES=Q2
+display  [SilkTop] SilkTop 0.1 0.15 4 0 0.06 0.008 0 0 0
+display  [AssyDrwTop] AssemblyTop 0.1 0.15 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=TIP30
+display  [AssyDrwTop] AssemblyTop 0.1 -0.14 4 0 0.06 0.008 0 0 0
+*component 1N4148 DO-35 D1 -0.1 -0.6 180 Component NONE
+@attribute REFDES=D1
+display  [AssyDrwTop] AssemblyTop -0.19 0.06 4 0 0.06 0.008 0 0 0
+display  [SilkTop] SilkTop -0.19 0.06 4 0 0.06 0.008 0 0 0
+@attribute TYPE_NAME=1N4148
+display  [AssyDrwTop] AssemblyTop -0.19 -0.13 4 0 0.06 0.008 0 0 0
+*component EDGE40M-B EDGE40 P4 0.8 2.55 0 Component NONE
+@attribute REFDES=P4
+display  [SilkTop] SilkTop 0.9 0.2 6 0 0.0625 0.005 0 0 0
+display  [SMTAssyDrwTop] SMTAssemblyTop 0.9 0.2 6 0 0.0625 0.005 0 0 0
+@attribute TYPE_NAME=EDGE40M-B
+display  [SMTAssyDrwTop] SMTAssemblyTop 0.75 -0.3 6 0 0.0625 0.005 0 0 0
+*component 74AS573 DIP20 U2 2.85 0.75 0 Component NONE
+@attribute REFDES=U2
+display  [AssyDrwTop] AssemblyTop -0.075 0.15 4 90 0.06 0.008 0 0 0
+display  [SilkTop] SilkTop -0.075 0.15 4 90 0.06 0.008 0 0 0
+@attribute TYPE_NAME=74AS573
+display  [AssyDrwTop] AssemblyTop 0.4 -0.15 4 0 0.06 0.008 0 0 0
+*component 74AS573 DIP20 U3 1.45 0.75 0 Component NONE
+@attribute REFDES=U3
+display  [AssyDrwTop] AssemblyTop -0.075 0.15 4 90 0.06 0.008 0 0 0
+display  [SilkTop] SilkTop -0.075 0.15 4 90 0.06 0.008 0 0 0
+@attribute TYPE_NAME=74AS573
+display  [AssyDrwTop] AssemblyTop 0.4 -0.15 4 0 0.06 0.008 0 0 0
+*component 74LS244 DIP20 U4 -0.15 0.75 0 Component NONE
+@attribute REFDES=U4
+display  [AssyDrwTop] AssemblyTop -0.075 0.15 4 90 0.06 0.008 0 0 0
+display  [SilkTop] SilkTop -0.075 0.15 4 90 0.06 0.008 0 0 0
+@attribute TYPE_NAME=74LS244
+display  [AssyDrwTop] AssemblyTop 0.4 -0.15 4 0 0.06 0.008 0 0 0
+*net ASK
++ P1.10 U5.12
+*net PE
++ P1.12 U5.9
+*net SLCT
++ P1.13 U5.7
+*net ERROR
++ P1.15 U5.4
+*net STROBE
++ U6.12 U6.13
++ U6.13 P1.1
+*net CS
++ R6.1 U1.13
+*net AUTO_FD
++ P1.14 U1.1
+*net INIT
++ P1.16 U1.2
+*net SLCT_IN
++ P1.17 U1.3
+*net AH
++ U6.1 U6.2
++ U6.2 U1.15
+*net AL
++ U6.4 U6.5
++ U6.5 U1.14
+*net Z
++ U6.9 U1.12
+*net WR
++ R7.1 R5.2
+*net NN_0023
++ U1.6 R1.2
+*net PowerOn
++ U6.10 U6.11
++ U6.11 R2.1
+*net NN_0011
++ Q1.1 R6.2
+*net NN_0018
++ Q3.1 R2.2
+*net NN_0017
++ Q2.1 R7.2
+*net 0
++ Q3.3 U1.5
++ U1.5 U1.4
++ U1.4 P1.18
++ P1.18 P1.19
++ P1.19 P1.20
++ P1.20 P1.21
++ P1.21 P1.22
++ P1.22 P1.23
++ P1.23 P1.24
++ P1.24 P1.25
++ P1.25 Q1.2
++ Q1.2 U5.15
++ U5.15 Q2.2
+*net +5v
++ R3.2 R1.1
++ R1.1 R8.2
++ R8.2 R5.1
++ R5.1 R9.2
++ R9.2 D1.2
+*net NN_0009
++ Q3.2 R3.1
++ R3.1 D1.1
+*net BUSY
++ P1.11 P4.A2
+*net NN_0012
++ Q1.3 R9.1
++ R9.1 P4.A17
+*net NN_0015
++ Q2.3 R8.1
++ R8.1 P4.B1
+*net NN_0002
++ U6.3 U2.11
+*net A12
++ U2.12 P4.B9
+*net A11
++ U2.13 P4.B3
+*net A10
++ U2.14 P4.A19
+*net A9
++ U2.15 P4.B5
+*net A8
++ U2.16 P4.B7
+*net A7
++ U2.17 P4.B8
+*net A6
++ U2.18 P4.B6
+*net A5
++ U2.19 P4.B4
+*net L/H
++ U3.13 U5.1
+*net NN_0004
++ U3.11 U6.6
+*net A4
++ U3.15 P4.B2
+*net A3
++ U3.16 P4.A20
+*net A2
++ U3.17 P4.A18
+*net A1
++ U3.18 P4.A16
+*net A0
++ U3.19 P4.A14
+*net RG
++ U6.8 U2.1
++ U2.1 U3.1
+*net Q5
++ P4.A11 U5.10
++ U5.10 U4.7
+*net Q4
++ P4.A9 U5.11
++ U5.11 U4.9
+*net Q3
++ P4.A7 U5.6
++ U5.6 U4.12
+*net Q7
++ P4.A15 U5.13
++ U5.13 U4.3
+*net Q2
++ P4.A8 U5.5
++ U5.5 U4.14
+*net Q6
++ P4.A13 U5.14
++ U5.14 U4.5
+*net Q1
++ P4.A10 U5.3
++ U5.3 U4.16
+*net Q0
++ P4.A12 U5.2
++ U5.2 U4.18
+*net NN_0014
++ U4.19 U4.1
++ U4.1 U3.14
+*net D0
++ U3.2 U2.2
++ U2.2 P1.2
++ P1.2 U4.2
+*net D1
++ U3.3 U2.3
++ U2.3 P1.3
++ P1.3 U4.4
+*net D2
++ U3.4 U2.4
++ U2.4 P1.4
++ P1.4 U4.6
+*net D3
++ U3.5 U2.5
++ U2.5 P1.5
++ P1.5 U4.8
+*net D4
++ U3.6 U2.6
++ U2.6 P1.6
++ P1.6 U4.11
+*net D5
++ U3.7 U2.7
++ U2.7 P1.7
++ P1.7 U4.13
+*net D6
++ U3.8 U2.8
++ U2.8 P1.8
++ P1.8 U4.15
+*net D7
++ U3.9 U2.9
++ U2.9 P1.9
++ P1.9 U4.17
+*net DIG_GND
++ U3.10 U2.10
++ U2.10 U6.7
++ U6.7 U5.8
++ U5.8 U1.8
++ U1.8 U4.10
+*net DIG_PWR
++ U3.20 U2.20
++ U2.20 U6.14
++ U6.14 U5.16
++ U5.16 U1.16
++ U1.16 U4.20
+*end

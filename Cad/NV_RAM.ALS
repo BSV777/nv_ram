@@ -1,0 +1,103 @@
+* Schematics Aliases *
+
+.ALIASES
+X_U6B           U6B(A=$N_0001 B=$N_0001 Y=AL PWR=$G_DPWR GND=$G_DGND )
+X_U6C           U6C(A=Z B=$N_0002 Y=RG PWR=$G_DPWR GND=$G_DGND )
+R_R6            R6(1=CS 2=$N_0003 )
+X_U6D           U6D(A=STROBE B=STROBE Y=$N_0002 PWR=$G_DPWR GND=$G_DGND )
+U_DSTM13          DSTM13(PWR=$G_DPWR GND=$G_DGND OUT0=STROBE )
+U_DSTM10          DSTM10(PWR=$G_DPWR GND=$G_DGND OUT0=AUTO_FD )
+U_DSTM11          DSTM11(PWR=$G_DPWR GND=$G_DGND OUT0=INIT )
+U_DSTM12          DSTM12(PWR=$G_DPWR GND=$G_DGND OUT0=SLCT_IN )
+R_R1            R1(1=+5v 2=$N_0004 )
+X_U1            U1(G1=$N_0004 G2Abar=0 G2Bbar=0 A=AUTO_FD B=INIT C=SLCT_IN
++  Y0=$N_0005 Y1=$N_0001 Y2=CS Y3=Z Y4=$N_0006 Y5=$N_0007 Y6=$N_0008 Y7=$N_0009
++  PWR=$G_DPWR GND=$G_DGND )
+X_U6A           U6A(A=$N_0005 B=$N_0005 Y=AH PWR=$G_DPWR GND=$G_DGND )
+U_DSTM9          DSTM9(PWR=$G_DPWR GND=$G_DGND OUT0=$N_0004 )
+R_R8            R8(1=$N_0010 2=+5v )
+Q_Q1            Q1(c=0 b=$N_0003 e=$N_0011 )
+R_R9            R9(1=$N_0011 2=+5v )
+X_U2            U2(OCbar=RG C=AH 1D=D0 2D=D1 3D=D2 4D=D3 5D=D4 6D=D5 7D=D6
++  8D=D7 1Q=A5 2Q=A6 3Q=A7 4Q=A8 5Q=A9 6Q=A10 7Q=A11 8Q=A12 PWR=$G_DPWR
++  GND=$G_DGND )
+R_R5            R5(1=+5v 2=WR )
+R_R7            R7(1=WR 2=$N_0012 )
+U_DSTM14          DSTM14(PWR=$G_DPWR GND=$G_DGND OUT0=Q7 OUT1=Q6 OUT2=Q5
++  OUT3=Q4 OUT4=Q3 OUT5=Q2 OUT6=Q1 OUT7=Q0 )
+X_U5            U5(Gbar=0 1A=Q0 1B=Q1 2A=Q2 2B=Q3 3A=Q4 3B=Q5 4A=Q6 4B=Q7
++  Abar/B=L/H 1Y=ERROR 2Y=SLCT 3Y=PE 4Y=ASK PWR=$G_DPWR GND=$G_DGND )
+U_DSTM15          DSTM15(PWR=$G_DPWR GND=$G_DGND OUT0=BUSY )
+_   P4(A1=$N_0013 A2=BUSY A3=$N_0014 A4=$N_0015 A5=$N_0016 A6=$N_0017 A7=Q3
++  A8=Q2 A9=Q4 A10=Q1 A11=Q5 A12=Q0 A13=Q6 A14=A0 A15=Q7 A16=A1 A17=$N_0011
++  A18=A2 A19=A10 A20=A3 B1=$N_0010 B2=A4 B3=A11 B4=A5 B5=A9 B6=A6 B7=A8 B8=A7
++  B9=A12 B10=$N_0018 B11=$N_0019 B12=$N_0020 B13=$N_0021 B14=$N_0022 B15=$N_0023
++  B16=$N_0024 B17=$N_0025 B18=$N_0026 B19=$N_0027 B20=$N_0028 )
+Q_Q2            Q2(c=0 b=$N_0012 e=$N_0010 )
+R_R10           R10(1=L/H 2=+5v )
+X_U4            U4(1A1=D0 1A2=D1 1A3=D2 1A4=D3 2A1=D4 2A2=D5 2A3=D6 2A4=D7
++  1Gbar=WR 2Gbar=WR 1Y1=Q0 1Y2=Q1 1Y3=Q2 1Y4=Q3 2Y1=Q4 2Y2=Q5 2Y3=Q6 2Y4=Q7
++  PWR=$G_DPWR GND=$G_DGND )
+X_U3            U3(OCbar=RG C=AL 1D=D0 2D=D1 3D=D2 4D=D3 5D=D4 6D=D5 7D=D6
++  8D=D7 1Q=A0 2Q=A1 3Q=A2 4Q=A3 5Q=A4 6Q=WR 7Q=L/H 8Q=$N_0029 PWR=$G_DPWR
++  GND=$G_DGND )
+U_DSTM5          DSTM5(PWR=$G_DPWR GND=$G_DGND OUT0=D7 OUT1=D6 OUT2=D5 OUT3=D4
++  OUT4=D3 OUT5=D2 OUT6=D1 OUT7=D0 )
+_   P1(1=STROBE 2=D0 3=D1 4=D2 5=D3 6=D4 7=D5 8=D6 9=D7 10=ASK 11=BUSY 12=PE
++  13=SLCT 14=AUTO_FD 15=ERROR 16=INIT 17=SLCT_IN 18=0 19=0 20=0 21=0 22=0 23=0
++  24=0 25=0 )
+D_D1            D1(1=PowerOn 2=+5v )
+Q_Q3            Q3(c=PowerOn b=$N_0030 e=0 )
+R_R3            R3(1=PowerOn 2=+5v )
+R_R2            R2(1=$N_0002 2=$N_0030 )
+_    _(AL=AL)
+_    _(Z=Z)
+_    _(RG=RG)
+_    _(CS=CS)
+_    _(STROBE=STROBE)
+_    _(AUTO_FD=AUTO_FD)
+_    _(INIT=INIT)
+_    _(SLCT_IN=SLCT_IN)
+_    _(AH=AH)
+_    _(D0=D0)
+_    _(D1=D1)
+_    _(D2=D2)
+_    _(D3=D3)
+_    _(D4=D4)
+_    _(D5=D5)
+_    _(D6=D6)
+_    _(D7=D7)
+_    _(A5=A5)
+_    _(A6=A6)
+_    _(A7=A7)
+_    _(A8=A8)
+_    _(A9=A9)
+_    _(A10=A10)
+_    _(A11=A11)
+_    _(A12=A12)
+_    _(WR=WR)
+_    _(Q7=Q7)
+_    _(Q6=Q6)
+_    _(Q5=Q5)
+_    _(Q4=Q4)
+_    _(Q3=Q3)
+_    _(Q2=Q2)
+_    _(Q1=Q1)
+_    _(Q0=Q0)
+_    _(L/H=L/H)
+_    _(ERROR=ERROR)
+_    _(SLCT=SLCT)
+_    _(PE=PE)
+_    _(ASK=ASK)
+_    _(BUSY=BUSY)
+_    _(A0=A0)
+_    _(A1=A1)
+_    _(A2=A2)
+_    _(A3=A3)
+_    _(A4=A4)
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+_    _(PowerOn=PowerOn)
+_    _(+5v=+5v)
+.ENDALIASES
+

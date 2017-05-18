@@ -1,0 +1,40 @@
+# Cooper & Chyan Technology, Inc.
+# SPECCTRA Automatic Router
+# SPECCTRA Version V7.0.2 made 97/03/11 09:38:52, built Mar 11 1997 09:59:52
+# Running on host 72602554
+# 
+#            Command Line Parameters
+#            -----------------------
+# Design File Name : C:\Diploma.!!!\Cad\nv_ram.dsn
+# No "-do" or "-docmd" switches specified on command line.
+# Password File Name : sp.pas
+# Status File Name : C:\Diploma.!!!\Cad\monitor.sts
+# 
+# 
+# 
+# 
+measure -1121.5 340 -1090 922.5
+application_mode placement
+measure -1550 360 -1430 857.5
+measure -1440 360 -1390 637.5
+measure -1390 340 -1390 340
+measure -1390 360 -1390 574.5
+measure -522 2002.5 -522 2002.5
+measure -599.5 2002.5 -599.5 2002.5
+measure -599.5 2002.5 -467.5 2220
+application_mode routing
+measure -900 922.5 -900 922.5
+application_mode placement
+mode move component
+select comp  J1
+relocate -800.0000 200.0000 0 0 
+relocate 1750.0000 -400.0000 0 180 
+relocate 1750.0000 -400.0000 0 180 
+relocate 1750.0000 -400.0000 0 180 
+relocate 1850.0000 -450.0000 0 180 
+relocate 1900.0000 -350.0000 0 180 
+unselect comp  J1
+quit -c
+write session C:\Diploma.!!!\Cad\nv_ram.ses
+ popdown save_quit
+quit -c
